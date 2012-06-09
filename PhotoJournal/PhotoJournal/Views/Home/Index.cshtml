@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "PhotoJournal";
+}
+<script>
+    fotoramaDefaults = {
+        margin: 0,
+        caption: 'simple',
+        fullscreenIcon: true
+    }
+</script>
+
+<h2>Главная</h2>
+
+@ViewBag.Message
+
+<div class="fotorama" data-width="700" data-height="467">
+    <a href="@Url.Content("~/Images/1.jpg")"><img src="@Url.Content("~/Images/1Preview.jpg")" alt="men without head"></a>
+    <a href="@Url.Content("~/Images/2.jpg")"><img src="@Url.Content("~/Images/2Preview.jpg")" alt="what drink is here?"></a>
+    <a href="@Url.Content("~/Images/3.png")"><img src="@Url.Content("~/Images/3Preview.png")" alt="homemediaserver"></a>
+</div>
