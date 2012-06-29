@@ -2,8 +2,11 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Content/css/Site.css")" rel="stylesheet" type="text/css" />
+    <!-- CSS -->
+    <link href="@Url.Content("~/Content/css/TemplateStyle.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/blue.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/css/fotorama.css")" rel="stylesheet" type="text/css"/>
+    <!-- jQuery Library-->
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/fotorama.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/functions.js")" type="text/javascript"></script>
@@ -16,7 +19,7 @@
 			</div>
 			<div id="menuContainer">
 				<ul id="navMenu">
-                    <li class="current parent">
+                    <li class="parent">
                         <a href="@Url.Action("Index","Home")">Главная</a>
                         <ul>
                             <li>
@@ -24,49 +27,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="@Url.Action("Index","Lenta")">Лента</a></li>
+                    <li class=""><a href="@Url.Action("Index","Lenta")">Лента</a></li>
 					<li class="parent">
-						<a href="#">Фотографии</a>
+						<a href="#">Путешествия</a>
 						<ul>
 							<li>
-								<a href="#">Путешествия</a>
-								<ul>
-									<li><a href="#">Острова</a></li>
-									<li><a href="#">Страны</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Животные</a>
-								<ul>
-									<li><a href="portfolio_2_cols_compact.html">Рыбы</a></li>
-									<li><a href="portfolio_2_cols_portrait.html">Птицы</a></li>
-									<li><a href="portfolio_2_cols_sidebar.html">Насекомые</a></li>
-									<li><a href="portfolio_2_cols_gallery.html">Млекопитающие</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="portfolio_3_cols.html">Космос</a>
-								<ul>
-									<li><a href="portfolio_3_cols_compact.html">Full HD</a></li>
-									<li><a href="portfolio_3_cols_portrait.html">Portrait</a></li>
-									<li><a href="portfolio_3_cols_sidebar.html">With Sidebar</a></li>
-									<li><a href="portfolio_3_cols_gallery.html">Gallery</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="portfolio_4_cols.html">Автомобили</a>
-								<ul>
-									<li><a href="portfolio_4_cols_compact.html">BMW</a></li>
-									<li><a href="portfolio_4_cols_portrait.html">Audi</a></li>
-									<li><a href="portfolio_4_cols_gallery.html">Ferrari</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="portfolio_single.html">Черно-белые</a>
+								<a href="#">Блоги</a>
 							</li>
 						</ul>
 					</li>
-					<li><a href="#">О проекте</a></li>
+					<li class=""><a href="#">О проекте</a></li>
 				</ul>
 			</div><!-- menuContainer close -->
 			<div class="clear"></div>
@@ -76,21 +46,16 @@
         <!-- wrap close -->
         <div id="footer">
 		<div class="wrap">
-			
 			<div id="footerArea">
-				
 				<div class="oneFourth">
-				
 					<div class="widget">
 						<img src="@Url.Content("~/Content/img/footer-logo.png")" alt="Footer logo" />
 						<br /><br />
 						<p>Портал посвященный фотографиям и фотографам. Фотографии со всего мира в одном журнале.</p>
 						<p>Email: <a href="#">flexo@bk.ru</a> <br />Tel: 0-123-456-789</p>
 					</div>
-					
 				</div>
 				<div class="oneFourth">
-				
 					<div class="widget">				
 						<h3>Карта сайта</h3>
 						<ul class="arrowList twoCols">
@@ -106,10 +71,8 @@
 							<li><a href="#">Sitemap</a></li>
 						</ul>
 					</div>
-				
 				</div>
 				<div class="oneFourth">
-				
 					<div class="widget">
 						<h3>Stay updated</h3>
 						<form action="#" class="newsletter">
@@ -117,35 +80,24 @@
 							<input type="submit" class="button small" name="submitEmail" value="Sign Up" />
 						</form>
 					</div>
-				
 				</div>
 				<div class="oneFourth last">
-				
 					<div class="widget">
 						<h3>Social</h3>
 						<ul class="socialList">
-							<li><a href="#"><img src="img/social/facebook-rounded.png" alt="Facebook" title="Facebook" /></a></li>
-							<li><a href="#"><img src="img/social/twitter-rounded.png" alt="Twitter" title="Twitter" /></a></li>
-							<li><a href="#"><img src="img/social/linked-in-rounded.png" alt="Linked In" title="Linked In" /></a></li>
-							<li><a href="#"><img src="img/social/youtube-rounded.png" alt="YouTube" title="YouTube" /></a></li>
-							<li><a href="#"><img src="img/social/behance-rounded.png" alt="Behance" title="Behance" /></a></li>
-							<li><a href="#"><img src="img/social/feed-rounded.png" alt="Feed" title="Feed" /></a></li>
+							<li><a href="#"><img src="@Url.Content("~/Content/img/social/facebook-rounded.png")" alt="Facebook" title="Facebook" /></a></li>
+							<li><a href="#"><img src="@Url.Content("~/Content/img/social/twitter-rounded.png")" alt="Twitter" title="Twitter" /></a></li>
 						</ul>
 						<div class="clear"></div>
 					</div>
-				
 				</div>
-				
 				<div class="clear"></div>
-				
 			</div>
-			
 			<div id="subFooter">
-				<div class="copyright">Copyright &copy; 2012</div>
+				<div class="copyright">Copyright PhotoJournal.by &copy; 2012</div>
 				<ul id="footerNavigation">
 					<li><a href="#">Terms &amp; Privacy</a></li>
 					<li><a href="#">Contact us</a></li>
-					<li><a href="#">HTML Theme by MTD</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>

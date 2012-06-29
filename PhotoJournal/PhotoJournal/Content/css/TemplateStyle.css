@@ -1,0 +1,2869 @@
+/*
+ * Template Name: Kotodama
+ * Author: MTD - http://themeforest.net/user/MTD
+ * Version: 1.0
+ */
+
+/* ----- ---- --- -- -
+
+01.	GENERAL
+	1. Reset
+	2. Common Elements
+	3. Main Layout
+	4. Typography
+	5. Forms
+	6. Browser Quirks
+02. LAYOUT
+	1. Header
+	2. Top panel
+	3. Navigation
+	4. Page Title
+	5. Footer
+	6. Sub Footer
+	7. Columns
+03. ELEMENTS
+	1. Buttons
+	2. Lists
+	3. Image Frames
+	4. Message Boxes
+	5. Pagination
+	6. Others
+04. BLOG
+	1. Post Layout
+	2. Comments
+05. PORTFOLIO
+	1. Portfolio Items
+	3. Columns Variation
+	3. Columns Variation With Sidebar
+	4. Inner Description and Gallery
+06. SLIDER
+	1. Main Slider
+	2. Content Slider
+	3. Nivo Slider
+	4. Static Image
+07. WIDGETS
+	1. Toggle
+	2. Accordion
+	3. Thumbnail List
+	4. Twitter
+	5. Testimonial
+	6. Archive & Lateral Menu
+	7. Others
+08. EXTRA PAGES
+	1. 404 Page
+
+ - -- --- ---- ----- */
+
+
+/* ------------------------------------------------------------------------------------ */
+/* 01. GENERAL
+/* ------------------------------------------------------------------------------------ */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. Reset
+/* - - - - - - - - - - - - - - - - - - - - */
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, input, textarea, img, blockquote, iframe, code, pre{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 2. Common Elements
+/* - - - - - - - - - - - - - - - - - - - - */
+	
+body{
+	font: 12px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #444;
+	background: url(../img/pageBg.jpg) no-repeat center top #fcfcfc;
+}
+
+.clear{
+	clear: both;
+}
+
+hr{
+	padding: 0;
+	margin: 0 0 30px;
+	height: 1px;
+	background: transparent;
+	border-width: 1px 0 0;
+	border-style: solid;
+	border-color: #d2d2d2;
+	clear: both;
+}
+
+/* - Micro Clearfix - */
+
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	zoom: 1;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 3. Main Layout
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.wrap{
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+#pageContent{
+	clear: both;
+	margin: 30px 0 0;
+}
+
+.main{
+	float: left;
+	width: 700px;
+}
+
+.leftSidebar .main{
+	float: right;
+}
+
+.sidebar{
+	float: left;
+	width: 220px;
+	margin: 0 0 0 20px;
+}
+
+.sidebar .widget{
+	margin: 0 0 20px;
+}
+
+#preFooter{
+	margin: 20px 0 0;
+	padding: 30px 0 0;
+	border-top: 1px solid #D2D2D2;
+}
+
+/* - Left Sidebar Layout - */
+
+.leftSidebar .main{
+	float: right;
+}
+
+.leftSidebar .sidebar{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 4. Typography
+/* - - - - - - - - - - - - - - - - - - - - */
+
+a{
+	text-decoration: none;
+	color: #00c2f3;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+p{
+	margin-bottom: 10px;
+	line-height: 1.4em;
+}
+
+.content p{
+	margin-bottom: 20px;
+	line-height: 1.6em;
+}
+
+h1{
+	margin: 0 0 20px;
+	font: normal 35px/1em "Droid Sans", sans-serif;
+	color: #00c2f3;
+}
+
+h1 strong{
+	font-weight: bold;
+	color: #444;
+}
+
+h2{
+	margin: 0 0 10px;
+	font: normal 23px/1.2em "Droid Sans", sans-serif;
+	color: #444;
+}
+
+h3{
+	margin: 0 0 10px;
+	font: normal 18px/1.2em "Droid Sans", sans-serif;
+	color: #444;
+}
+
+.widget h3{
+	margin: 0 0 10px;
+}
+
+h4{
+	margin: 0 0 10px;
+	font: normal 14px/1.2em "Droid Sans", sans-serif;
+	color: #444;
+}
+
+h5{
+	margin: 0 0 10px;
+	font: bold 12px/1.2em "Droid Sans", sans-serif;
+	color: #444;
+}
+
+h6{
+	margin: 0 0 10px;
+	font: normal 9px/1.2em "Droid Sans", sans-serif;
+	color: #444;
+}
+
+span.highlight{
+	padding: 1px 5px;
+	color: #fff;
+	background: #00c2f3;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* - Selection Color - */
+
+::-moz-selection{
+	color: #fff;
+	background: #00c2f3;
+}
+
+::selection{
+	color: #fff;
+	background: #00c2f3;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 5. Forms
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.formField{
+	margin: 0 0 10px;
+	position: relative;
+}
+
+.formField label{
+	float: left;
+	width: 150px;
+	margin: 0;
+	padding: 8px 0;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #444;
+	cursor: pointer;
+}
+
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+textarea{
+	float: left;
+	width: 190px;
+	margin: 0;
+	padding: 8px 9px;
+	font: normal 12px/12px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #444;
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+textarea{
+	width: 530px;
+	height: 90px;
+}
+
+input[type=text]:focus,
+input[type=url]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=color]:focus,
+input[type=email]:focus,
+textarea:focus{
+	border-color: #bbb;
+}
+
+.formField input[type=submit],
+.formField .button{
+	float: left;
+	margin: 20px 0 0 150px;
+}
+
+input.textField{
+	margin: 0 0 15px;
+	width: 196px;
+}
+
+.oneThird input.textField{
+	width: 276px;
+}
+
+
+/* - Top Panel and Footer Variations - */
+
+#topPanel input[type=text],
+#footer input[type=text],
+#topPanel input[type=url],
+#footer input[type=url],
+#topPanel input[type=tel],
+#footer input[type=tel],
+#topPanel input[type=number],
+#footer input[type=number],
+#topPanel input[type=color],
+#footer input[type=color],
+#topPanel input[type=email],
+#footer input[type=email],
+#topPanel textarea,
+#footer textarea{
+	color: #fff;
+	background: #555;
+	border: none;
+}
+
+
+/* - Contact Form - */
+
+.contactForm{
+	padding: 10px 0;
+}
+
+.contactForm .formField{
+	position: relative;
+	margin: 0;
+}
+
+.formField .invalidField{
+	float: left;
+	display: none;
+	width: 30px;
+	height: 30px;
+	background: url(../img/invalid-field.png) no-repeat center;
+}
+
+.formField.error .invalidField{
+	display: block;
+}
+
+.contactForm textarea{
+	width: 420px;
+}
+
+.formField.captchaField{
+	margin-top: 15px;
+	margin-left: 150px;
+	padding-right: 30px;
+	width: 440px;
+}
+
+.formField.captchaField input{
+	float: right;
+	width: 50px;
+}
+
+.formField.captchaField span{
+	float: right;
+	height: 30px;
+	padding: 0 5px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #444;
+}
+
+.formField.captchaField .invalidField{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0;
+}
+
+.contactLoader{
+	float: left;
+	display: none;
+	width: 30px;
+	height: 28px;
+	margin: 20px 0 0 10px;
+	background: url(../img/loader.gif) no-repeat center;
+}
+
+.contactResults{
+	float: left;
+	height: 28px;
+	margin: 20px 0 0 10px;
+}
+
+.contactResults span{
+	display: none;
+	line-height: 28px;
+}
+
+.contactResults .success{
+	color: green;
+}
+
+.contactResults .fail{
+	color: red;
+}
+
+
+/* - Contact form page with sidebar - */
+
+.main .contactForm textarea{
+	width: 500px;
+}
+
+.main .formField.captcha{
+	width: 520px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 6. Browser Quirks
+/* - - - - - - - - - - - - - - - - - - - - */
+
+a:active, a:focus{
+	outline: none;
+}
+
+input:focus, input:active, textarea:focus{
+	outline: none;
+}
+
+input::-moz-focus-inner { 
+	border: 0;
+}
+
+textarea{
+	-moz-resize: none;
+	resize: none;
+	overflow: auto;
+}
+
+textarea:focus{
+	-moz-resize: both;
+	resize: both;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* 02. LAYOUT
+/* ------------------------------------------------------------------------------------ */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. Header
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#topLine{
+	width: 100%;
+	height: 2px;
+	background: #222;
+	position: relative;
+	z-index: 3;
+}
+
+#header{
+	padding: 30px 0 20px;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+#logoContainer{
+	float: left;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 2. Top panel
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#topPanel{
+	background: #222;
+	display: none;
+}
+
+#topPanel .wrap{
+	position: relative;
+	padding: 20px 0 10px;
+	color: #fff;
+}
+
+#topPanelHandle{
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+	float: right;
+	padding: 4px 7px 2px 10px;
+	background: #222;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	cursor: pointer;
+}
+
+#topPanelHandle span{
+	padding: 0 15px 0 0;
+	height: 14px;
+	color: #fff;
+	font-size: 11px;
+	line-height: 14px;
+	text-transform: uppercase;
+	background: url(../img/top-panel-arrow.png) no-repeat right top transparent;
+	overflow: hidden;
+}
+
+#topPanelHandle.close span{
+	background-position: right bottom;
+}
+
+#topPanel h3{
+	color: #fff;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 3. Navigation
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#menuContainer{
+	float: right;
+}
+
+ul#navMenu{
+	margin: 25px 0 0;
+	list-style: none outside none;
+}
+
+ul#navMenu li{
+	float: left;
+	margin: 0 0 0 18px;
+	position: relative;
+	z-index: 999;
+}
+
+ul#navMenu li a{
+	display: block;
+	padding: 5px 10px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 12px;
+	background: transparent;
+	color: #444;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: background-color 0.1s linear, color 0.1s linear;
+	-moz-transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+ul#navMenu li.parent a{
+	padding-right: 24px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+ul#navMenu li a:hover, ul#navMenu li.current a{
+	color: #fff;
+	text-decoration: none;
+	background-color: #222;
+}
+
+ul#navMenu li.parent a:hover, ul#navMenu li.current.parent a{
+	background-position: right bottom;
+}
+
+
+/* - -- --- ---- Sub-Menu ---- --- -- - */
+
+ul#navMenu li.parent ul{
+	display: none;
+	position: absolute;
+	top: 22px;
+	left: 0;
+	width: 160px;
+	margin: 0;
+	padding: 10px 0 0;
+	list-style: none outside none;
+	background: url(../img/drop-down-arrrow.png) no-repeat 18px 0;
+	overflow: visible;
+	z-index: 99;
+}
+
+.noJs ul#navMenu li.parent:hover ul{
+	display: block;
+}
+
+ul#navMenu li.parent ul li{
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#navMenu li.parent ul li a{
+	display: block;
+	padding: 9px 10px;
+	color: #444;
+	background: #fff;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+	border-bottom: 1px solid #E6E6E6;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+ul#navMenu li.parent ul li:first-child a{	
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+ul#navMenu li.parent ul li:last-child a{	
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+ul#navMenu li.parent ul li a:hover{
+	color: #00c2f3;
+	background: #fefefe;
+}
+
+
+/* - -- --- ---- Second Level Sub-Menu ---- --- -- - */
+
+ul#navMenu li.parent ul li ul{
+	display: none;
+	position: absolute;
+	top: -1px;
+	left: 158px;
+	width: 160px;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+
+ul#navMenu li.parent ul li ul.leftMenu{
+	left: -168px;
+	padding: 0 10px 0 0;
+}
+
+.noJs ul#navMenu li.parent:hover ul li ul{
+	display: none;
+}
+
+.noJs ul#navMenu li.parent ul li:hover ul{
+	display: block;
+}
+
+ul#navMenu li.parent ul li ul li:first-child a{	
+	border-top: 1px solid #eee;
+}
+
+/* - Sub Menu Arrow added via CSS3 - */
+
+ul#navMenu li.parent ul li ul li:first-child a:after{
+	display: block;
+	height: 14px;
+	width: 6px;
+	position: absolute;
+	left: -5px;
+	top: 9px;
+	content: '';
+	background: url(../img/sub-menu-arrow.png) no-repeat 0 0;
+	z-index: 10;
+}
+
+ul#navMenu li.parent ul li ul.leftMenu li:first-child a:after{
+	display: none;
+}
+
+ul#navMenu li.parent ul li ul.leftMenu li:first-child a:before{
+	display: block;
+	height: 14px;
+	width: 6px;
+	position: absolute;
+	right: -5px;
+	top: 9px;
+	content: '';
+	background: url(../img/sub-menu-arrow-left.png) no-repeat 0 0;
+	z-index: 10;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 4. Page Title
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#pageTitle{
+	margin: 0 0 50px;
+	padding: 15px 0;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+#pageTitle h1, #pageTitle h2{
+	float: left;
+	padding: 0;
+	margin: 0;
+	font: normal 27px/29px "Droid Sans", sans-serif;
+	color: #444;
+}
+
+
+/* - -- --- ---- Breadcrumb ---- --- -- - */
+
+ul.breadCrumb{
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none outside none;
+}
+
+ul.breadCrumb li{
+	float: left;
+	margin: 9px 0 0;
+	padding: 0;
+	font: normal 11px/11px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #444;
+}
+
+ul.breadCrumb li a{
+	color: #444;
+	text-decoration: none;
+}
+
+ul.breadCrumb li a:hover{
+	color: #333;
+	text-decoration: none;
+}
+
+ul.breadCrumb li.sep{
+	padding: 0 10px;
+	color: #999;
+}
+
+ul.breadCrumb li span{
+	font-weight: bold;
+}
+
+
+/* - -- --- ---- Seacrh ---- --- -- - */
+
+#pageTitle .searchForm{
+	float: right;
+	margin: 0;
+	padding: 0 0 0 25px;
+	width: 172px;
+}
+
+#pageTitle .searchField{
+	float: right;
+	margin: 0;
+	padding: 8px 10px 6px;
+	width: 150px;
+	font: normal 11px/11px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #777;
+	background: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #A2A2A2 #D0D0D0 #F0F0F0;
+	box-shadow: inset 0 1px 3px #ddd;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#pageTitle .searchBtn{
+	display: none;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 5. Footer
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#footer{
+	margin: 20px 0 0;
+	color: #fff;
+	background: #222;
+	border-top: 4px solid #00C2F3;
+}
+
+#footerArea{
+	padding: 18px 0 8px;
+}
+
+#footer a{
+	color: #00c2f3;
+}
+
+#footer h3{
+	color: #fff;
+}
+
+#footer ul.arrowList li{
+	background-image: url(../img/footer-list-arrow.png);
+}
+
+#footer ul.arrowList li a{
+	color: #fff;
+}
+
+#footer ul.arrowList li a:hover{
+	color: #00c2f3;
+	text-decoration: none;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 6. Sub Footer
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#subFooter{
+	padding: 25px 0;
+	font: normal 11px/1em 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	border-top: 1px solid #3F3F3F;
+}
+
+#footer .copyright{
+	float: left;
+	color: #666;
+}
+
+ul#footerNavigation{
+	float: right;
+	margin: 0;
+	list-style: none outside none;
+}
+
+ul#footerNavigation li{
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 0 0 0 10px;
+	border-left: 1px solid #444;
+}
+
+ul#footerNavigation li:first-child{
+	margin: 0;
+	padding: 0;
+	border-left: none;
+}
+
+ul#footerNavigation li a{
+	color: #fff;
+}
+
+ul#footerNavigation li a:hover{
+	text-decoration: underline;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 7. Columns
+/* - - - - - - - - - - - - - - - - - - - - */
+
+/* - -- --- ---- One Half ---- --- -- - */
+
+.oneHalf{ width: 460px; }
+
+.main .oneHalf{ width: 340px; }
+
+.oneHalf{
+	float: left;
+	margin-right: 20px;
+}
+
+.oneHalf.last, 
+.main .oneHalf.last{
+	margin-right: 0;
+}
+
+
+/* - -- --- ---- One Third ---- --- -- - */
+
+.oneThird{ width: 300px; }
+
+.main .oneThird{ width: 220px; }
+
+.twoThird{ width: 620px; }
+
+.main .twoThird{ width: 460px; }
+
+.oneThird,
+.twoThird{
+	float: left;
+	margin-right: 20px;
+}
+
+.oneThird.last, 
+.main .oneThird.last,
+.twoThird.last,
+.main .twoThird.last{
+	margin-right: 0;
+}
+
+
+/* - -- --- ---- One Fourth ---- --- -- - */
+
+.oneFourth{ width: 220px; }
+
+.main .oneFourth{ width: 160px; }
+
+.threeFourth{ width: 700px; }
+
+.main .threeFourth{ width: 520px; }
+
+.oneFourth,
+.main .oneFourth,
+.threeFourth,
+.main .threeFourth{
+	float: left;
+	margin-right: 20px;
+}
+
+.oneFourth.last,
+.main .oneFourth.last,
+.threeFourth.last,
+.main .threeFourth.last{
+	margin-right: 0;
+}
+
+
+/* - -- --- ---- One Fifth ---- --- -- - */
+
+.oneFifth{ width: 172px; }
+
+.main .oneFifth{ width: 124px; }
+
+.twoFifth{ width: 364px; }
+
+.main .twoFifth{ width: 268px; }
+
+.threeFifth{ width: 556px; }
+
+.main .threeFifth{ width: 412px; }
+
+.fourFifth{ width: 748px; }
+
+.main .fourFifth{ width: 556px; }
+
+.oneFifth,
+.main .oneFifth,
+.twoFifth,
+.main .twoFifth,
+.threeFifth,
+.main .threeFifth,
+.fourFifth,
+.main .fourFifth{
+	float: left;
+	margin-right: 20px;
+}
+
+.oneFifth.last,
+.main .oneFifth.last,
+.twoFifth.last,
+.main .twoFifth.last,
+.threeFifth.last,
+.main .threeFifth.last,
+.fourFifth.last,
+.main .fourFifth.last{
+	margin-right: 0;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* 03. ELEMENTS
+/* ------------------------------------------------------------------------------------ */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. Buttons
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.button{
+	margin: 0 0 10px;
+	display: inline-block;
+	padding: 13px 19px 12px;
+	font: bold 14px/14px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    text-decoration: none;
+	outline: none;
+    cursor: pointer;
+    background: #00c2f3;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.button:hover, .button:focus{
+	color: #00c2f3;
+    text-decoration: none;
+	outline: none;
+    background: #303030;
+}
+
+.button:active{
+	color: #00c2f3;
+    text-decoration: none;
+	outline: none;
+}
+
+.button.small{
+	padding: 8px 10px 7px;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.button.large{
+	padding: 18px 27px 16px;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 2. Lists
+/* - - - - - - - - - - - - - - - - - - - - */
+
+ul, ol{
+	margin: 0 0 20px;
+	list-style-position: inside;
+}
+
+ul li, ol li{
+	margin: 0 0 6px;
+	line-height: 14px;
+}
+
+ul li ul,
+ul li ol,
+ol li ul,
+ol li ol{
+	margin: 0;
+}
+
+
+/* - -- --- ---- Bullet List ---- --- -- - */
+
+ul.bulletList li{
+	padding: 0 0 0 14px;
+	background: url(../img/list-bullet.png) no-repeat left 1px;
+	list-style: none outside none;
+}
+
+/* - -- --- ---- Arrow List ---- --- -- - */
+
+ul.arrowList li{
+	padding: 0 0 0 14px;
+	background: url(../img/list-arrow.png) no-repeat left 0px;
+	list-style: none outside none;
+}
+
+/* - -- --- ---- Circle List ---- --- -- - */
+
+ul.circleList li{
+	padding: 0 0 0 14px;
+	background: url(../img/list-circle.png) no-repeat left 1px;
+	list-style: none outside none;
+}
+
+/* - -- --- ---- Square List ---- --- -- - */
+
+ul.squareList li{
+	padding: 0 0 0 14px;
+	background: url(../img/list-square.png) no-repeat left 1px;
+	list-style: none outside none;
+}
+
+/* - -- --- ---- Triangle List ---- --- -- - */
+
+ul.triangleList li{
+	padding: 0 0 0 14px;
+	background: url(../img/list-triangle.png) no-repeat left 1px;
+	list-style: none outside none;
+}
+
+/* - -- --- ---- Star List ---- --- -- - */
+
+ul.starList li{
+	padding: 0 0 0 14px;
+	background: url(../img/list-star.png) no-repeat left 1px;
+	list-style: none outside none;
+}
+
+/* - -- --- ---- Two-Columns List ---- --- -- - */
+
+ul.twoCols li{
+	float: left;
+}
+
+ul.twoCols:before, ul.twoCols:after{
+	content: "";
+	display: table;
+}
+
+ul.twoCols:after{
+	clear: both;
+}
+
+ul.twoCols{
+	zoom: 1;
+}
+
+.oneThird ul.twoCols li{ width: 96px; }
+
+.oneFourth ul.twoCols li,
+.main .oneThird ul.twoCols li{ width: 96px; }
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 3. Image Frames
+/* - - - - - - - - - - - - - - - - - - - - */
+
+img.imgFrame,
+.postThumb img{
+	padding: 9px;
+	background: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f9f9f9 #ececec #cdcdcd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.imgShadow a.lightbox,
+.postThumb a.lightbox,
+a.lightbox .thumbHolder{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.imgShadow img,
+.imgShadow a,
+.postThumb img,
+.postThumb a{
+	display: block;
+}
+
+
+/* - Image Shadow - */
+
+.imgShadow,
+.postThumb{
+	display: block;
+	margin: 0 0 5px;
+	padding: 0 0 15px;
+	background: url(../img/thumb-shadow-fullwidth.png) no-repeat center bottom;
+	clear: both;
+}
+
+.threeFourthShadow,
+.main .imgShadow,
+.main .postThumb{
+	background-image: url(../img/thumb-shadow-threeFourth.png);
+}
+
+.oneHalfShadow,
+.oneHalf .imgShadow,
+.oneHalf .postThumb{
+	padding: 0 0 15px;
+	background-image: url(../img/thumb-shadow-oneHalf.png);
+}
+
+.oneThirdShadow,
+.main .twoThirdShadow,
+.main .oneHalfShadow,
+.main .oneHalf .postThumb{
+	padding: 0 0 10px;
+	background-image: url(../img/thumb-shadow-oneThird.png);
+}
+
+.twoThirdShadow{
+	padding: 0 0 15px;
+	background-image: url(../img/thumb-shadow-twoThird.png);
+}
+
+.oneFourthShadow,
+.sidebar .imgShadow,
+.main .oneThirdShadow,
+.main .oneThird .postThumb{
+	padding: 0 0 10px;
+	background-image: url(../img/thumb-shadow-oneFourth.png);
+}
+
+/* - Image alignment - */
+
+.alignRight{
+	float: right;
+	margin: 0 0 10px 20px;
+}
+
+.alignLeft{
+	float: left;
+	margin: 0 20px 10px 0;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 4. Message Boxes
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.msgBox{
+	position: relative;
+	margin: 0 0 20px;
+	padding: 14px 20px;
+	font-size: 12px;
+	line-height: 1.2em;
+	font-family: 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.msgBox .close{
+	position: absolute;
+	display: block;
+	width: 9px;
+	height: 10px;
+	right: 12px;
+	top: 16px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.msgBox.info{
+	background-color: #dff2fa;
+	color: #2e7893;
+	border-color: #85cfec;
+}
+
+.msgBox.info .close{
+	background-image: url(../img/msg-close-info.png);
+}
+
+.msgBox.note{
+	background-color: #f8f2cb;
+	color: #8f5c0b;
+	border-color: #edca42;
+}
+
+.msgBox.note .close{
+	background-image: url(../img/msg-close-note.png);
+}
+
+.msgBox.confirm{
+	background-color: #e5f2c0;
+	color: #4a630e;
+	border-color: #aacf49;
+}
+
+.msgBox.confirm .close{
+	background-image: url(../img/msg-close-confirm.png);
+}
+
+.msgBox.error{
+	background-color: #ffd4d4;
+	color: #cd0a0a;
+	border-color: #d97676;
+}
+
+.msgBox.error .close{
+	background-image: url(../img/msg-close-error.png);
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 5. Pagination
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.pagination{
+	clear: both;
+	margin: 30px 0 20px;
+	padding: 10px 0 0;
+	height: 20px;
+	border-top: 1px solid #d2d2d2;
+}
+
+.pagination span.pages{
+	float: left;
+	font: bold 11px/20px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+}
+
+.pagination ul.pageList{
+	list-style: none outside none;
+	float: right;
+}
+
+.pagination ul.pageList li{
+	float: left;
+	margin: 0 0 0 6px;
+}
+
+.pagination ul.pageList li a,
+.pagination ul.pageList li span{
+	display: block;
+	padding: 5px 7px;
+	font: bold 11px/1em 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #ccc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.pagination ul.pageList li.prevPage a{
+	width: 21px;
+	height: 21px;
+	padding: 0;
+	background: url(../img/arrow-prev-page.png) no-repeat center #222;
+}
+
+.pagination ul.pageList li.nextPage a{
+	width: 21px;
+	height: 21px;
+	padding: 0;
+	background: url(../img/arrow-next-page.png) no-repeat center #222;
+}
+
+.pagination ul.pageList li.mainPage a{
+	width: 21px;
+	height: 21px;
+	padding: 0;
+	background: url(../img/pagination-main.png) no-repeat center #999;
+}
+
+.pagination ul.pageList li a:hover{
+	color: #fff;
+	text-decoration: none;
+	background-color: #00c2f3;
+}
+
+.pagination ul.pageList li span.current{
+	background-color: #00c2f3;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 6. Others
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.icon{
+	float: left;
+	margin: 0 10px 5px 0;
+}
+
+blockquote{
+	margin: 40px 0 40px 30px;
+	padding: 0 0 0 8px;
+	font-size: 13px;
+	line-height: 1.4em;
+	font-style: italic;
+	border-left: 2px solid #222;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* 04. BLOG
+/* ------------------------------------------------------------------------------------ */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. Post Layout
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.blogPost{
+	margin: 0 0 30px;
+}
+
+.postMeta{
+	margin: 0 0 15px;
+}
+
+.oneHalf .postMeta{
+	margin: 0 0 15px;
+}
+
+.postMeta h1.postTitle, .postMeta h2.postTitle{
+	margin: 0 0 5px;
+	font: normal 25px/1.2em "Droid Sans", sans-serif;
+	color: #444;
+}
+
+.postMeta .postTitle a{
+	color: #444;
+	text-decoration: none;
+}
+
+.postMeta .postTitle a:hover{
+	color: #00c2f3;
+	text-decoration: none;
+}
+
+.blogPost .sep{
+	padding: 0 4px;
+	color: #999;
+}
+
+.shareButtons{
+	float: right;
+	padding: 10px 0 10px 10px;
+	background: #ededed;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.shareButtons span{
+	float: left;
+	height: 20px;
+}
+
+.postFooter{
+	clear: both;
+	font-size: 12px;
+	color: #444;
+}
+
+.postFooter .readMore{
+	float: left;
+	font-weight: bold;
+}
+
+.postFooter .details{
+	float: right;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 2. Comments
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.commentList{
+	margin: 50px 0;
+	padding: 0;
+	list-style: none outside none;
+}
+
+.commentList li.singleComment{
+	padding: 0;
+	margin: 0 0 20px;
+}
+
+li.singleComment .commentMeta{
+	float: left;
+	width: 110px;
+	font-size: 12px;
+}
+
+.commentMeta .avatar{
+	display: block;
+	width: 80px;
+	height: 80px;
+	padding: 5px;
+	background: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f9f9f9 #ececec #cdcdcd;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.commentMeta .commentAuthor{
+	display: block;
+	padding: 8px 0 0;
+}
+
+.commentMeta .commentDate{
+	display: block;
+	padding: 3px 0 0;
+	font-style: italic;
+}
+
+.commentContent{
+	float: right;
+	width: 590px;
+}
+
+.commentBubble{
+	position: relative;
+	padding: 18px;
+	background: #fff;
+	border: 1px solid #c4c4c4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.commentArrow{
+	position: absolute;
+	width: 7px;
+	height: 11px;
+	top: 12px;
+	left: -7px;
+	background: url(../img/comment-arrow.png) no-repeat 0 0;
+}
+
+.commentReply{
+	clear: both;
+	text-align: right;
+}
+
+.commentReply a{
+	text-transform: uppercase;
+}
+
+#respond{
+	margin: 0 0 30px;
+}
+
+.commentForm{
+	margin: 30px 0 0;
+}
+
+
+/* - Nested Comments - */
+
+.commentList ul.children{
+	padding: 0 0 0 40px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 5px 44px;
+	list-style: none outside none;
+	clear: both;
+}
+
+.children .commentContent{
+	width: 550px;
+}
+
+.children .children .commentContent{
+	width: 510px;
+}
+
+.children .children .children .commentContent{
+	width: 470px;
+}
+
+.children .children .children .children .commentContent{
+	width: 430px;
+}
+
+/* - Fullwidth Comments - */
+
+.fullwidth .commentContent{
+	width: 830px;
+}
+
+.fullwidth .children .commentContent{
+	width: 790px;
+}
+
+.fullwidth .children .children .commentContent{
+	width: 750px;
+}
+
+.fullwidth .children .children .children .commentContent{
+	width: 710px;
+}
+
+.fullwidth .children .children .children .children .commentContent{
+	width: 670px;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* 05. PORTFOLIO
+/* ------------------------------------------------------------------------------------ */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. Portfolio Items
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.portfolioItem{
+	margin: 0;
+}
+
+.portfolioPage .portfolioItem{
+	margin: 0 0 30px;
+}
+
+.portfolioThumb .frame{
+	padding: 9px;
+	background: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f9f9f9 #ececec #cdcdcd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.portfolioItem .portfolioThumb a.viewDetail{
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+.portfolioThumb .thumbHolder img{
+	display: block;
+}
+
+.portfolioItem h2, .portfolioItem h2 a{
+	margin: 0 0 10px;
+	font: normal 18px/20px "Droid Sans", sans-serif;
+	color: #444;
+	text-decoration: none;
+}
+
+.portfolioItem h2 a:hover{
+	color: #00c2f3;
+}
+
+.portfolioItem .date{
+	font: normal 11px/20px "Droid Sans", sans-serif;
+}
+
+.portfolioItem .portfolioDetails{
+	margin: 8px 0 0;
+}
+
+.portfolioItem .portfolioDetails h2{
+	float: left;
+}
+
+.portfolioItem .portfolioDetails .date{
+	float: right;	
+}
+
+.portfolioItem .portfolioDetails p{
+	clear: both	
+}
+
+.portfolioItem .portfolioDetails .button{
+	float: left;
+	margin-right: 20px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 2. Columns Variation
+/* - - - - - - - - - - - - - - - - - - - - */
+
+
+/* - -- --- 1 Column --- -- - */
+
+.twoThird .portfolioThumb{
+	padding: 0 0 15px;
+	background: url(../img/thumb-shadow-twoThird.png) no-repeat center bottom;
+}
+
+.twoThird .portfolioThumb .thumbHolder{
+	height: auto;
+}
+
+
+/* - -- --- 2 Columns --- -- - */
+
+.oneHalf .portfolioThumb{
+	padding: 0 0 15px;
+	background: url(../img/thumb-shadow-oneHalf.png) no-repeat center bottom;
+}
+
+.oneHalf .portfolioThumb .thumbHolder{
+	height: 220px;
+}
+
+.oneHalf .portfolioThumb.portrait .thumbHolder{
+	height: 500px;
+}
+
+
+/* - -- --- 3 Columns --- -- - */
+
+.oneThird .portfolioThumb{
+	padding: 0 0 10px;
+	background: url(../img/thumb-shadow-oneThird.png) no-repeat center bottom;
+}
+
+.oneThird .portfolioThumb .thumbHolder{
+	height: 160px;
+}
+
+.oneThird .portfolioThumb.portrait .thumbHolder{
+	height: 320px;
+}
+
+
+/* - -- --- 4 Columns --- -- - */
+
+.oneFourth .portfolioThumb{
+	padding: 0 0 10px;
+	background: url(../img/thumb-shadow-oneFourth.png) no-repeat center bottom;
+}
+
+.oneFourth .portfolioThumb .thumbHolder{
+	height: 160px;
+}
+
+.oneFourth .portfolioThumb.portrait .thumbHolder{
+	height: 240px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 3. Columns Variation With Sidebar
+/* - - - - - - - - - - - - - - - - - - - - */
+
+/* - -- --- 1 Column --- -- - */
+
+.main .twoThird .portfolioThumb{
+	padding: 0 0 15px;
+	background: url(../img/thumb-shadow-oneHalf.png) no-repeat center bottom;
+}
+
+.main .twoThird .portfolioThumb .thumbHolder{
+	height: auto;
+}
+
+/* - -- --- 2 Columns --- -- - */
+
+.main .oneHalf .portfolioThumb{
+	padding: 0 0 10px;
+	background: url(../img/thumb-shadow-oneThird.png) no-repeat center bottom;
+}
+
+.main .oneHalf .portfolioThumb .thumbHolder{
+	height: 180px;
+}
+
+.main .oneHalf .portfolioThumb.portrait .thumbHolder{
+	height: 370px;
+}
+
+
+/* - -- --- 3 Columns --- -- - */
+
+.main .oneThird .portfolioThumb{
+	padding: 0 0 10px;
+	background: url(../img/thumb-shadow-oneFourth.png) no-repeat center bottom;
+}
+
+.main .oneThird .portfolioThumb .thumbHolder{
+	height: 160px;
+}
+
+.main .oneThird .portfolioThumb.portrait .thumbHolder{
+	height: 240px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 4. Inner Description and Gallery
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.portfolioItem.innerDesc,
+.portfolioItem.gallery{
+	margin: 0 0 10px;
+}
+
+.portfolioItem.innerDesc .portfolioThumb a.viewDetail{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.portfolioItem.innerDesc .thumbHolder{
+	position: relative;
+}
+
+.portfolioItem.innerDesc img.thumb{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.portfolioItem.innerDesc div.description{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 0 3px 4px;
+	z-index: 2;
+}
+
+.portfolioItem.innerDesc .description h2{
+	margin: 0 0 5px;
+	font-size: 20px;
+	line-height: 1.2em;
+}
+
+.portfolioItem.innerDesc .description .date{
+	font-size: 14px;
+	line-height: 1.2em;
+	color: #00c2f3;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* 06. SLIDER
+/* ------------------------------------------------------------------------------------ */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. Main Slider
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#mainSlider{
+	margin: 30px 0 0;
+}
+
+#mainSlider .sliderHolder{
+	margin: 0;
+	padding: 0 0 15px;
+	background: url(../img/thumb-shadow-fullwidth.png) no-repeat center bottom;
+	clear: both;
+}
+
+#mainSlider .sliderFrame{
+	padding: 9px;
+	background: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f9f9f9 #ececec #cdcdcd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#mainSlider .bulletNavigationHolder{
+	height: 50px;
+	clear: both;
+}
+
+#mainSlider .thumbnailNavigationHolder{
+	height: 100px;
+	clear: both;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 2. Content Slider
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.contentSlider{
+	width: 940px;
+	height: 335px;
+	overflow: hidden;
+	position: relative;
+}
+
+.contentSliderWrapper{
+	position: relative;
+}
+
+.contentSlider ul.contentSliderList{
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 9999px;
+	list-style: none outside none;
+}
+
+.contentSliderList li.contentSlide{
+	float: left;
+	width: 940px;
+	height: 335px;
+	margin: 0;
+	padding: 0;
+}
+
+.contentSliderWrapper .csNavWrapper{
+	margin: 10px 0 30px 0;
+	padding: 0 15px;
+	clear: both;
+	position: relative;
+}
+
+
+/* - Arrow Navigation - */
+
+.contentSliderWrapper a.csDirectionNav{
+	display: block;
+	position: absolute;
+	top: 124px;
+	width: 27px;
+	height: 52px;
+}
+
+.contentSliderWrapper .csDirectionNav.csPrev{
+	left: -60px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.contentSliderWrapper .csDirectionNav.csNext{
+	right: -60px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.contentSliderWrapper a.csDirectionNav:hover{
+	background-position: 0 -52px;
+}
+
+
+/* - Bullet Navigation - */
+
+.contentSliderWrapper .csBulletNav{
+	height: 23px;
+	margin: 0 auto;
+	padding: 0 5px;
+	background: #222;
+	list-style: none outside none;
+	clear: both;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.contentSliderWrapper .csBulletNav li{
+	float: left;
+	width: 11px;
+	height: 11px;
+	margin: 6px 5px;
+	padding: 0;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 -24px;
+	cursor: pointer;
+}
+
+.contentSliderWrapper .csBulletNav li:hover{
+	background-position: 0 -12px;
+}
+
+.contentSliderWrapper .csBulletNav li.active{
+	background-position: 0 0;
+}
+
+
+/* - Thumbnail Navigation - */
+
+.contentSliderWrapper .csThumbnailNav{
+	margin: 0 auto;
+	padding: 0;
+	width: 9999px;
+	height: 95px;
+	background: transparent;
+	list-style: none outside none;
+	overflow: hidden;
+}
+
+.contentSliderWrapper .csThumbnailNav li{
+	float: left;
+	margin: 0 10px;
+	padding: 10px 0 5px;
+	background: url(../img/slider-thumb-shadow.png) no-repeat center bottom transparent;
+	cursor: pointer;
+	-webkit-transition: padding 0.1s linear;
+	-moz-transition: padding 0.1s linear;
+}
+
+.contentSliderWrapper .csThumbnailNav li:hover{
+	padding: 0 0 15px;
+}
+
+.contentSliderWrapper .csThumbnailNav li.active{
+	padding: 0 0 15px;
+}
+
+.contentSliderWrapper .csThumbnailNav li a{
+	display: block;
+	width: 110px;
+	height: 80px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	-webkit-transition: padding 0.1s linear;
+	-moz-transition: padding 0.1s linear;
+}
+
+/* - When the thumbnails don't fit - */
+
+.contentSliderWrapper .csThumbnailNavSlider{
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+
+.contentSliderWrapper .csThumbnailNavSlider .csThumbnailNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.contentSliderWrapper .csNavWrapper .csThumbnailNavArrowLeft{
+	display: block;
+	width: 15px;
+	height: 29px;
+	position: absolute;
+	top: 36px;
+	left: 0;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.contentSliderWrapper .csNavWrapper .csThumbnailNavArrowRight{
+	display: block;
+	width: 15px;
+	height: 29px;
+	position: absolute;
+	top: 36px;
+	right: 0;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.contentSliderWrapper .csNavWrapper .csThumbnailNavArrowLeft:hover,
+.contentSliderWrapper .csNavWrapper .csThumbnailNavArrowRight:hover{
+	background-position: 0 -29px;
+}
+
+
+.contentSlider h2{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.contentSlider p{
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 3. Nivo Slider
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#mainSlider .nivoSlider{
+	width: 920px;
+    height: 300px;
+    background: url(../img/loader.gif) no-repeat center;
+}
+
+#mainSlider .nivoSlider img{
+	display: none;
+}
+
+#mainSlider .nivo-directionNav a{
+	top: 124px;
+	width: 27px;
+	height: 52px;
+}
+
+#mainSlider .nivo-prevNav{
+	left: -60px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#mainSlider .nivo-nextNav{
+	right: -60px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#mainSlider .nivo-directionNav a:hover{
+	background-position: 0 -52px;
+}
+
+.nivo-caption p{
+	padding: 10px;
+	margin: 0;
+	font-size: 13px;
+}
+
+
+/* - Bullet Navigation - */
+
+#mainSlider .nivo-controlNav{
+	position: absolute;
+	bottom: -50px;
+	height: 23px;
+	padding: 0 5px;
+	background: #222;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#mainSlider .nivo-controlNav a{
+	float: left;
+	width: 11px;
+	height: 11px;
+	margin: 6px 5px;
+	text-indent: -9999px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 -24px;
+}
+
+#mainSlider .nivo-controlNav a:hover{
+	background-position: 0 -12px;
+}
+
+#mainSlider .nivo-controlNav a.active{
+	background-position: 0 0;
+}
+
+
+/* - Thumbnail Navigation - */
+
+#mainSlider .nivoSlider.withThumbnails .nivo-controlNav{
+	position: absolute;
+	bottom: -120px;
+	height: 90px;
+	padding: 0;
+	background: transparent;
+}
+
+#mainSlider .nivoSlider.withThumbnails .nivo-controlNav a{
+	float: left;
+	width: 110px;
+	height: 80px;
+	margin: 0 10px;
+	padding: 10px 0 5px;
+	background: url(../img/slider-thumb-shadow.png) no-repeat center bottom transparent;
+	-webkit-transition: padding 0.1s linear;
+	-moz-transition: padding 0.1s linear;
+}
+
+#mainSlider .nivoSlider.withThumbnails .nivo-controlNav a:hover{
+	padding: 0 0 15px;
+}
+
+#mainSlider .nivoSlider.withThumbnails .nivo-controlNav a.active{
+	padding: 0 0 15px;
+}
+
+#mainSlider .nivoSlider.withThumbnails .nivo-controlNav img{
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 4. Static Image
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#mainSlider .staticImage img,
+#mainSlider .staticImage a{
+	display: block;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* 07. WIDGETS
+/* ------------------------------------------------------------------------------------ */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. Toggle
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.toggle{
+	margin: 0 0 20px 0;
+}
+
+.toggle .toggleTitle{
+	margin: 0;
+	padding: 0 0 0 30px;
+	height: 16px;
+	font: bold 12px/16px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #444;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+}
+
+.toggle.closed .toggleTitle{
+	background-position: 0 -16px;
+}
+
+.toggle .toggleContent{
+	padding: 20px 30px 10px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 2. Accordion
+/* - - - - - - - - - - - - - - - - - - - - */
+
+ul.accordion{
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none outside none;
+}
+
+ul.accordion li{
+	margin: 0;
+	padding: 0;
+}
+
+ul.accordion li .accordionTitle{
+	margin: 0 0 3px;
+	padding: 11px;
+	cursor: pointer;
+	border: 1px solid #cfcfcf;
+	background: #eee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
+    background: -moz-linear-gradient(top, #f5f5f5, #e8e8e8);
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+ul.accordion li .accordionTitle:hover{
+	border-color: #c0c0c0;
+}
+
+ul.accordion li .accordionTitle h4{
+	margin: 0;
+	padding: 0 0 0 30px;
+	height: 16px;
+	font: bold 12px/16px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #444;
+	text-shadow: 0 1px 0 #f5f5f5;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+ul.accordion li.closed .accordionTitle h4{
+	font-weight: normal;
+	color: #444;
+	background-position: 0 -16px;
+}
+
+ul.accordion li .accordionContent{
+	padding: 20px 30px 10px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 3. Thumbnail List
+/* - - - - - - - - - - - - - - - - - - - - */
+
+ul.thumbList{
+	margin: 0 0 10px;
+	list-style: none outside none;
+}
+
+ul.thumbList li{
+	margin: 0 0 10px;
+}
+
+ul.thumbList li a.thumbLink{
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 2px;
+	background: #FAFAFA;
+	border: 1px solid #E3E3E3;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+ul.thumbList li a.thumbLink img{
+	display: block;
+}
+
+ul.thumbList li div.thumbListDetail{
+	float: left;
+}
+
+ul.thumbList li h5.thumbListTitle{
+	margin: 7px 0 9px 0;
+	font: normal 13px/1.2em 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+}
+
+ul.thumbList li h5.thumbListTitle a{
+	color: #444;
+	text-decoration: none;
+}
+
+ul.thumbList li h5.thumbListTitle a:hover{
+	color: #222;
+	text-decoration: none;
+}
+
+ul.thumbList li div.thumbListMeta{
+	font: italic 11px/1em 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #444;
+}
+
+ul.thumbList li div.thumbListMeta .sep{
+	padding: 0 6px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 4. Twitter
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.twitterWidget{
+	margin: 0 0 20px;
+}
+
+.twitterWidget .twitterContent{
+	display: block;
+}
+
+.twitterWidget .twitterUser{
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+.twitterWidget .twitterList{
+	margin: 5px 0 0;
+	padding: 0;
+	min-height: 40px;
+	list-style: none outside none;
+	position: relative;
+}
+
+.twitterWidget .twitterList li{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 12px;
+	color: #444;
+	line-height: 1.3em;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.twitterWidget .twitterList li.current{
+	z-index: 2;
+	opacity: 1;
+}
+
+.twitterWidget .twitterArrows{
+	float: right;
+	width: 56px;
+	height: 16px;
+}
+
+.twitterArrows span{
+	float: left;
+	width: 30px;
+	height: 16px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 -16px;
+	cursor: pointer;
+}
+
+.twitterArrows span.twitterArrowUp{
+	margin: 0 -2px 0 0;
+}
+
+.twitterArrows span.twitterArrowDown{
+	margin: 0 0 0 -2px;
+}
+
+.twitterArrows span.inactive, 
+.twitterArrows span.inactive:hover{
+	background-position: 0 0;
+}
+
+.twitterArrows span:hover{
+	background-position: 0 -32px;
+}
+
+
+/* - Large Layout - */
+
+.twitterWidget.large .twitterContent{
+	float: left;
+}
+
+.twitterWidget.large .twitterUser{
+	font-size: 15px;   
+}
+
+.twitterWidget.large .twitterList li{
+	font-size: 15px;
+}
+
+.twitterWidget.large .twitterArrows{
+	width: 88px;
+	height: 52px;
+	background: url(../img/twitter-arrow-bg.png) no-repeat 0 0;
+}
+
+.twitterWidget.large .twitterArrows span{
+	float: none;
+	display: block;
+	width: 42px;
+	height: 24px;
+	background-position: 0 -24px;
+}
+
+.twitterWidget.large .twitterArrows span.twitterArrowUp{
+	margin: 0 46px 4px 0;
+}
+
+.twitterWidget.large .twitterArrows span.twitterArrowDown{
+	margin: 0 46px 0;
+}
+
+.twitterWidget.large .twitterArrows span:hover{
+	background-position: 0 -48px;
+}
+
+.twitterArrows span.twitterArrowUp.inactive, 
+.twitterArrows span.twitterArrowUp.inactive:hover,
+.twitterArrows span.twitterArrowDown.inactive, 
+.twitterArrows span.twitterArrowDown.inactive:hover{
+	background-position: 0 0;
+}
+
+
+/* - Columns Width Variations - */
+
+.sidebar .twitterWidget{
+	margin: 0;
+}
+
+.twitterWidget.large .twitterContent{
+	width: 850px;
+}
+
+.main .twitterWidget.large .twitterContent{
+	width: 610px;
+}
+
+.twoThird .twitterWidget.large .twitterContent{
+	width: 520px;
+}
+
+.oneHalf .twitterWidget.large .twitterContent,
+.main .twoThird .twitterWidget.large .twitterContent{
+	width: 370px;
+}
+
+.main .oneHalf .twitterWidget.large .twitterContent{
+	width: 250px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 5. Testimonial
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.testimonialWidget{
+	margin: 0 0 20px;
+	background: #fff;
+	border-width: 0 1px 1px;
+	border-style: solid;
+	border-color: #dfdfdf #f0f0f0; 
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.testimonialWidget ul.testimonialList{
+	margin: 0;
+	padding: 18px 6px 6px 34px;
+	min-height: 40px;
+	background-color: #222;
+	background-repeat: no-repeat;
+	background-position: 6px 6px;
+	list-style: none outside none;
+	overflow: hidden;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+ul.testimonialList li{
+	top: 18px;
+	left: 34px;
+	margin: 0;
+	padding: 0 28px 12px 0;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	display: none;
+}
+
+ul.testimonialList li.current{
+	display: block;
+}
+
+ul.testimonialList blockquote{
+	margin: 0;
+	padding: 0;
+	font: italic normal 12px/1.4em 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: transparent;
+	border: none;
+}
+
+ul.testimonialList cite{
+	display: none;
+}
+
+.testimonialWidget .testimonialDetail{
+	padding: 10px 10px 10px 30px;
+	height: 18px;
+}
+
+.testimonialDetail .testimonialAuthor{
+	font-family: 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.testimonialDetail .testimonialArrows{
+	float: right;
+}
+
+.testimonialDetail .testimonialArrows span{
+	float: left;
+	margin: 0 0 0 5px;
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.testimonialDetail .testimonialArrows span.arrowLeft{
+	background-position: 0 -18px;
+}
+
+.testimonialDetail .testimonialArrows span.arrowLeft:hover{
+	background-position: 0 0;
+}
+
+.testimonialDetail .testimonialArrows span.arrowLeft.inactive{
+	background-position: 0 -36px;
+}
+
+.testimonialDetail .testimonialArrows span.arrowRight{
+	background-position: -18px -18px;
+}
+
+.testimonialDetail .testimonialArrows span.arrowRight:hover{
+	background-position: -18px 0;
+}
+
+.testimonialDetail .testimonialArrows span.arrowRight.inactive{
+	background-position: -18px -36px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 6. Archive & Lateral Menu
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.widgetArchive h4,
+.widgetMenu h4{
+	height: 28px;
+	padding: 0 10px;
+	margin: 0;
+	font: bold 12px/28px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #222;
+	border-bottom: 3px solid #00c2f3;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.widgetArchive ul,
+.widgetMenu ul{
+	margin: 0;
+	padding: 14px 5px 5px;
+	list-style: none outside none;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: 15px 0;
+	border-width: 0 1px 1px;
+	border-style: solid;
+	border-color: #cdcdcd #ececec;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.widgetArchive ul li,
+.widgetMenu ul li{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.widgetArchive ul li a,
+.widgetMenu ul li a{
+	display: block;
+	height: 14px;
+	padding: 5px 0 5px 30px;
+	font: bold 12px/14px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #444;
+	text-decoration: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 10px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: background-color 0.1s linear, background-position-x 0.1s linear;
+	-moz-transition: background-color 0.1s linear, background-position-x 1s linear;
+}
+
+.widgetArchive ul li a:hover,
+.widgetMenu ul li a:hover{
+	padding-left: 40px;
+	color: #444;
+	text-decoration: none;
+	background-position: 20px -24px;
+	background-color: #e8e8e8;
+}
+
+.widgetArchive ul li.current a,
+.widgetMenu ul li.current a{
+	color: #444;
+	text-decoration: none;
+	background-position: 10px -24px;
+	background-color: #e8e8e8;
+}
+
+
+/* - Second level list - */
+
+.widgetMenu ul li ul{
+	margin: 0 0 0 20px;
+	padding: 0;
+	background: transparent;
+	border: none;
+}
+
+.widgetMenu ul li ul li{
+	background: transparent;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 7. Others
+/* - - - - - - - - - - - - - - - - - - - - */
+
+/* - -- --- ---- Tags ---- --- -- - */
+
+ul.tagsList{
+	padding: 0;
+	margin: 0;
+	list-style: none outside none;
+}
+
+ul.tagsList li{
+	float: left;
+	margin: 0 5px 5px 0;
+	padding: 0;
+}
+
+ul.tagsList li a{
+	display: block;
+	height: 14px;
+	padding: 2px 10px;
+	font-size: 12px;
+	line-height: 14px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+}
+
+ul.tagsList li a:hover{
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+
+/* - -- --- ---- Social List ---- --- -- - */
+
+ul.socialList{
+	margin: 0 0 12px;
+	list-style: none outside none;
+}
+
+ul.socialList li{
+	float: left;
+	margin: 0 8px 6px 0;
+	width: 28px;
+	height: 28px;
+}
+
+
+/* - -- --- ---- Google Map ---- --- -- - */
+
+.googleMap{
+	height: 400px;
+}
+
+#topPanel .googleMap{
+	height: 350px;
+}
+
+.googleMap .mapDetails{
+	display: none;
+}
+
+
+/* - -- --- ---- Back To Top Button ---- --- -- - */
+
+a#backToTop{
+	position: fixed;
+	bottom: 50px;
+	padding: 0 0 0 30px;
+	height: 21px;
+	width: 100px;
+	font: normal 12px/21px 'Helvetica Neue',  Helvetica, Arial, sans-serif;
+	color: #444;
+	background: url(../img/back-to-top.png) no-repeat left center;
+	overflow: hidden;
+	display: none;
+}
+
+a#backToTop:hover{
+	text-decoration: none;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* 08. EXTRA PAGES
+/* ------------------------------------------------------------------------------------ */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. 404 Page
+/* - - - - - - - - - - - - - - - - - - - - */
+
+h1.notFound{
+	font: bold 100px/1.2em "Droid Sans", sans-serif;
+	color: #444;
+}
+
+h1.notFound strong{
+	color: #00c2f3
+}

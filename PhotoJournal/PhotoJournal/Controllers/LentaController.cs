@@ -18,7 +18,8 @@ namespace PhotoJournal.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var phLenta = _db.PhotoLentas;
+            return View(phLenta.ToList());
         }
 
     }

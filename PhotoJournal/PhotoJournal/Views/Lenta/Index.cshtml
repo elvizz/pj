@@ -1,6 +1,28 @@
-﻿@{
-    ViewBag.Title = "Index";
+﻿@model IEnumerable<PhotoJournal.Models.PhotoLenta>
+
+@{
+    ViewBag.Title = "Фотолента";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Фотолента</h2>
+<div id="pageContent" style="width: 700px">
+<div class="content">
+    <div class="blogPost">
+        <table>	
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td><div class="postThumb">
+                        <a href="#" class="lightbox" title="Portfolio item description">
+                            <img src="@Url.Content("~/Images/photoLenta/" + @Html.DisplayFor(modelitem => item.Name))" alt="@Html.DisplayFor(modelitem=>item.Title)"/>
+                        </a>
+                    </div></td>
+                    <td>@Html.DisplayFor(m=>item.DateTime)</td>
+                    <td>@Html.DisplayFor(m=>item.Description)</td>
+            </tr>
+        }
+        </table>
+    </div>
+</div>
+</div>
