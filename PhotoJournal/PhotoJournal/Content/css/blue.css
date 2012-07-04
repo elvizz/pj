@@ -1,0 +1,273 @@
+/*
+ * Kotodama - Blue
+ */
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Typography
+/* - - - - - - - - - - - - - - - - - - - - */
+
+a{
+	color: #00c2f3;
+}
+
+h1{
+	color: #00c2f3;
+}
+
+span.highlight{
+	color: #fff;
+	background: #00c2f3;
+}
+
+::-moz-selection{
+	color: #fff;
+	background: #00c2f3;
+}
+
+::selection{
+	color: #fff;
+	background: #00c2f3;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Top Panel
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#topPanel a{
+	color: #00c2f3;
+}
+
+#topPanelHandle:hover span{
+	color: #00c2f3;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Navigation
+/* - - - - - - - - - - - - - - - - - - - - */
+
+ul#navMenu li.parent a{
+	background-image: url(../img/blue/menu-arrow.png);
+}
+
+ul#navMenu li.parent ul li a:hover{
+	color: #00c2f3;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Buttons
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.button{
+    background: #00c2f3;
+}
+
+.button:hover, .button:focus{
+	color: #00c2f3;
+}
+
+.button:active{
+	color: #00c2f3;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Image Frames
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.imgShadow a.lightbox,
+.postThumb a.lightbox,
+a.lightbox .thumbHolder{
+	background-image: url(../img/blue/magnify.png);
+}
+
+.imgShadow a.lightbox.video,
+.postThumb a.lightbox.video,
+a.lightbox.video .thumbHolder{
+	background-image: url(../img/blue/play.png);
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Footer
+/* - - - - - - - - - - - - - - - - - - - - */
+
+#footer{
+	border-top: 4px solid #00C2F3;
+}
+
+#footer a{
+	color: #00c2f3;
+}
+
+#footer ul.arrowList li a:hover{
+	color: #00c2f3;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Pagination
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.pagination ul.pageList li a:hover{
+	background-color: #00c2f3;
+}
+
+.pagination ul.pageList li span.current{
+	background-color: #00c2f3;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Blog
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.postMeta .postTitle a:hover{
+	color: #00c2f3;
+}
+
+.commentList ul.children{
+	background-image: url(../img/blue/comment-reply.png);
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Portfolio
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.portfolioItem h2 a:hover{
+	color: #00c2f3;
+}
+
+.portfolioItem.innerDesc .description .date{
+	color: #00c2f3;
+}
+
+.portfolioItem.innerDesc .portfolioThumb a.viewDetail{
+	background-image: url(../img/blue/open-link.png);
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Slider
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.contentSliderWrapper .csDirectionNav.csPrev{
+	background-image: url(../img/blue/slider-arrow-left.png);
+}
+
+.contentSliderWrapper .csDirectionNav.csNext{
+	background-image: url(../img/blue/slider-arrow-right.png);
+}
+
+.contentSliderWrapper .csBulletNav li{
+	background-image: url(../img/blue/slider-bullet-nav.png);
+}
+
+.contentSliderWrapper .csNavWrapper .csThumbnailNavArrowLeft{
+	background-image: url(../img/blue/slider-thumb-arrow-left.png);
+}
+
+.contentSliderWrapper .csNavWrapper .csThumbnailNavArrowRight{
+	background-image: url(../img/blue/slider-thumb-arrow-right.png);
+}
+
+#mainSlider .nivo-prevNav{
+	background-image: url(../img/blue/slider-arrow-left.png);
+}
+
+#mainSlider .nivo-nextNav{
+	background-image: url(../img/blue/slider-arrow-right.png);
+}
+
+#mainSlider .nivo-controlNav a{
+	background-image: url(../img/blue/slider-bullet-nav.png);
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Widgets
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.toggle .toggleTitle{
+	background-image: url(../img/blue/button-toggle.png);
+}
+
+ul.accordion li .accordionTitle h4{
+	background-image: url(../img/blue/button-accordion.png);
+}
+
+/* - Testimonial - */
+
+.testimonialWidget ul.testimonialList{
+	background-image: url(../img/blue/quote-left.png);
+}
+
+ul.testimonialList li{
+	background-image: url(../img/blue/quote-right.png);
+}
+
+.testimonialDetail .testimonialArrows span{
+	background-image: url(../img/blue/testimonial-arrows.png);
+}
+
+/* - Twitter - */
+
+.twitterArrows span.twitterArrowUp{
+	background-image: url(../img/blue/twitter-arrow-up.png);
+}
+
+.twitterWidget.large .twitterArrows span.twitterArrowUp{
+	background-image: url(../img/blue/twitter-arrow-up-large.png);
+}
+
+.twitterArrows span.twitterArrowDown{
+	background-image: url(../img/blue/twitter-arrow-down.png);
+}
+
+.twitterWidget.large .twitterArrows span.twitterArrowDown{
+	background-image: url(../img/blue/twitter-arrow-down-large.png);
+}
+
+/* - Tags - */
+
+ul.tagsList li a{
+	color: #3d8aa6;
+	border-color: #a7d6ec;
+	background: #ddf1f9;
+}
+
+ul.tagsList li a:hover{
+	border-color: #00c2f3;
+	background: #00c2f3;
+}
+
+/* - Archives - */
+
+.widgetArchive ul,
+.widgetMenu ul{
+	background-image: url(../img/blue/widget-title-arrow.png);
+}
+
+.widgetArchive h4,
+.widgetMenu h4{
+	border-bottom: 3px solid #00c2f3;
+}
+
+.widgetArchive ul li a,
+.widgetMenu ul li a{
+	background-image: url(../img/blue/sidebar-list-arrow.png);
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* Extra Pages
+/* - - - - - - - - - - - - - - - - - - - - */
+
+h1.notFound strong{
+	color: #00c2f3
+}

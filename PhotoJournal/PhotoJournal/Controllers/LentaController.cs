@@ -18,7 +18,15 @@ namespace PhotoJournal.Controllers
 
         public ActionResult Index()
         {
-            var phLenta = _db.PhotoLentas;
+            //PhotoLenta phL = new PhotoLenta();
+            //phL.Title = "dsfsf";
+            //phL.Name = "afsdg";
+            //phL.DateTime = DateTime.Now;
+            //phL.Description = "sdfsdgdsgs";
+            //_db.PhotoLentas.Add(phL);
+            //_db.SaveChanges();
+
+            var phLenta = _db.PhotoLentas.OrderByDescending(l=>l.DateTime);
             return View(phLenta.ToList());
         }
 

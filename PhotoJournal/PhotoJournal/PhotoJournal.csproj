@@ -75,6 +75,7 @@
   <ItemGroup>
     <Content Include="Content\css\blue.css" />
     <Content Include="Content\css\fotorama.css" />
+    <Content Include="Content\css\prettyPhoto.css" />
     <Content Include="Content\css\TemplateStyle.css" />
     <Content Include="Content\img\back-to-top.png" />
     <Content Include="Content\img\blue\button-accordion.png" />
@@ -116,7 +117,6 @@
     <Content Include="Content\img\thumb-shadow-threeFourth.png" />
     <Content Include="Content\img\thumb-shadow-twoThird.png" />
     <Content Include="Global.asax" />
-    <Content Include="Content\css\Site.css" />
     <Content Include="Scripts\fotorama.js" />
     <Content Include="Scripts\functions.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
@@ -124,6 +124,7 @@
     <Content Include="Scripts\jquery-1.5.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.11.js" />
     <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
