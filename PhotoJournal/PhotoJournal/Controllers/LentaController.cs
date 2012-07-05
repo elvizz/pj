@@ -14,21 +14,15 @@ namespace PhotoJournal.Controllers
         //
         // GET: /PhotoLenta/
 
-        PJContext _db = new PJContext();
+        readonly PJContext _db = new PJContext();
+        private const int ItemsOnPage = 5;
 
-        public ActionResult Index()
+        public ActionResult Index(int page=1)
         {
-            //PhotoLenta phL = new PhotoLenta();
-            //phL.Title = "dsfsf";
-            //phL.Name = "afsdg";
-            //phL.DateTime = DateTime.Now;
-            //phL.Description = "sdfsdgdsgs";
-            //_db.PhotoLentas.Add(phL);
-            //_db.SaveChanges();
-
-            var phLenta = _db.PhotoLentas.OrderByDescending(l=>l.DateTime);
+            var phLenta = _db.PhotoLentas.OrderByDescending(l => l.DateTime).Skip((page - 1) * ItemsOnPage).Take(ItemsOnPage);
+            ViewBag.Page = page;
+            ViewBag.PagesCount = (int)Math.Ceiling((decimal)_db.PhotoLentas.Count() / ItemsOnPage);
             return View(phLenta.ToList());
         }
-
     }
 }

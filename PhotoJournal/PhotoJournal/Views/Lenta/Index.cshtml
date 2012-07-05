@@ -6,17 +6,29 @@
 }
 
 <h2>Фотолента</h2>
-<div id="pageContent" style="width: 700px">
-<div class="content">
-    <div class="">
-        @foreach(var item in Model)
-        {
-          <div class="postThumb">
-                <a href="@Url.Content("~/Images/photoLenta/" + @Html.DisplayFor(modelitem => item.Name))" class="lightbox" title="@Html.DisplayFor(modelitem=>item.Description)">
-                 <img style="width: 700px" src="@Url.Content("~/Images/photoLenta/" + @Html.DisplayFor(modelitem => item.Name))" alt="@Html.DisplayFor(modelitem=>item.Title)"/>
-                </a>
-            </div>
-        }
+<div id="pagination">
+@for (int i = 1; i <= ViewBag.PagesCount;i++ )
+{
+   <a href="@Url.Action("Index","Lenta")?page=@i">@i</a>
+}
+</div>
+<div id="pageContent">
+    <div class="content">
+        <div class="">
+            @foreach (var item in Model)
+            {
+                <div class="postThumb">
+                    <a href="@Url.Content("~/Images/photoLenta/" + @Html.DisplayFor(modelitem => item.Name))" title="@Html.DisplayFor(modelitem => item.Description)">
+                        <img style="max-width: 700px; max-height: 500px;" src="@Url.Content("~/Images/photoLenta/" + @Html.DisplayFor(modelitem => item.Name))" alt="@Html.DisplayFor(modelitem => item.Title)"/>
+                    </a>
+                </div>
+            }
+        </div>
     </div>
 </div>
+<div id="pagination">
+@for (int i = 1; i <= ViewBag.PagesCount;i++ )
+{
+   <a href="@Url.Action("Index","Lenta")?page=@i">@i</a>
+}
 </div>

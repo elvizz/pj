@@ -34,7 +34,7 @@ namespace PhotoJournal
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<PJContext>());
+            Database.SetInitializer(new PhotoJournalDBInitializer());
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);

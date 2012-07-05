@@ -1193,7 +1193,7 @@ a.lightbox .thumbHolder{
 .imgShadow a,
 .postThumb img,
 .postThumb a{
-	display: block;
+	/*display: block;*/
 }
 
 
@@ -1204,7 +1204,7 @@ a.lightbox .thumbHolder{
 	display: block;
 	margin: 0 0 5px;
 	padding: 0 0 15px;
-	background: url(../img/thumb-shadow-fullwidth.png) no-repeat center bottom;
+	/*background: url(../img/thumb-shadow-fullwidth.png) no-repeat center bottom;*/
 	clear: both;
 }
 
