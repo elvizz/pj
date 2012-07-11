@@ -71,6 +71,7 @@
     <Compile Include="Models\PhotoJournalDBInitializer.cs" />
     <Compile Include="Models\PJContext.cs" />
     <Compile Include="Models\PhotoLenta.cs" />
+    <Compile Include="Models\PJRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\img\blue\.DS_Store" />
+    <Content Include="Views\Lenta\Photo.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

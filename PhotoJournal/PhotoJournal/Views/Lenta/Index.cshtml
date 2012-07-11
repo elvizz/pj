@@ -18,7 +18,7 @@
             @foreach (var item in Model)
             {
                 <div class="postThumb">
-                    <a href="@Url.Content("~/Images/photoLenta/" + @Html.DisplayFor(modelitem => item.Name))" title="@Html.DisplayFor(modelitem => item.Description)">
+                    <a href="@Url.Action("Photo","Lenta")@string.Format("/{0}",item.Id)" title="@Html.DisplayFor(modelitem => item.Description)">
                         <img style="max-width: 700px; max-height: 500px;" src="@Url.Content("~/Images/photoLenta/" + @Html.DisplayFor(modelitem => item.Name))" alt="@Html.DisplayFor(modelitem => item.Title)"/>
                     </a>
                 </div>

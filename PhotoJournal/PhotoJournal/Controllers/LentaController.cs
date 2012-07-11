@@ -24,5 +24,11 @@ namespace PhotoJournal.Controllers
             ViewBag.PagesCount = (int)Math.Ceiling((decimal)_db.PhotoLentas.Count() / ItemsOnPage);
             return View(phLenta.ToList());
         }
+
+        public ActionResult Photo(Guid id)
+        {
+            var photo = PJRepository.Instance().GetItem(id);
+            return View(photo);
+        }
     }
 }
