@@ -14,20 +14,24 @@ namespace PhotoJournal.Controllers
         //
         // GET: /PhotoLenta/
 
-        readonly PJContext _db = new PJContext();
-        private const int ItemsOnPage = 5;
+        private DataManger _dataManger;
+        public LentaController()
+        {
+            _dataManger = new DataManger();
+        }
 
+        private const int ItemsOnPage = 5;
         public ActionResult Index(int page=1)
         {
-            var phLenta = _db.PhotoLentas.OrderByDescending(l => l.DateTime).Skip((page - 1) * ItemsOnPage).Take(ItemsOnPage);
+            var phLenta = _dataManger.Lenta.GetAll().Skip((page - 1)*ItemsOnPage).Take(ItemsOnPage);
             ViewBag.Page = page;
-            ViewBag.PagesCount = (int)Math.Ceiling((decimal)_db.PhotoLentas.Count() / ItemsOnPage);
+            ViewBag.PagesCount = (int)Math.Ceiling((decimal)_dataManger.Lenta.GetAll().Count() / ItemsOnPage);
             return View(phLenta.ToList());
         }
 
         public ActionResult Photo(Guid id)
         {
-            var photo = PJRepository.Instance().GetItem(id);
+            var photo = _dataManger.Lenta.GetItem(id);
             return View(photo);
         }
     }

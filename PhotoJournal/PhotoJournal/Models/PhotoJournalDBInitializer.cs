@@ -7,6 +7,9 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace PhotoJournal.Models
 {
+    /// <summary>
+    ///Класс инициализирует базу данных, записывает в нее изначальные данные
+    /// </summary>
     public class PhotoJournalDBInitializer: DropCreateDatabaseIfModelChanges<PJContext>
     {
         protected override void Seed(PJContext context)
@@ -18,7 +21,7 @@ namespace PhotoJournal.Models
                                     DateTime = DateTime.Now, Description = "Нью-Йорк, 1925год. Движение приостановлено из-за кошки переносящей через дорогу котенка"},
                                 new PhotoLenta {Title = "Куба", Name = "15645645373568.jpg", DateTime = DateTime.Now, Description = "Фейерверки на Кубе"},
                                 new PhotoLenta {Title = "Сладкая вата", Name = "1331549008421915.jpeg", DateTime = DateTime.Now, Description = "Счастью нет границ."},
-                                new PhotoLenta {Title = "Огонь и торнадо", Name = "152564576538476.jpg", DateTime = DateTime.Now, Description = "Огоень и торнадо"},
+                                new PhotoLenta {Title = "Огонь и торнадо", Name = "152564576538476.jpg", DateTime = DateTime.Now, Description = "Огонь и торнадо"},
                                 new PhotoLenta {Title = "Миграция скатов", Name = "1556425765786538.jpg", DateTime = DateTime.Now, Description = "Миграция золотистых скатов"},
                                 new PhotoLenta {Title = "Красная армия", Name = "1425645765847698.jpg", DateTime = DateTime.Now, Description = "Парад"},
                                 new PhotoLenta {Title = "Дети", Name = "FRROerb-Yn8.jpg", DateTime = DateTime.Now, Description = "Какие-то дети, старый снимок"},

@@ -14,8 +14,15 @@ namespace PhotoJournal.Models
     /// </summary>
     public class PJContext: DbContext
     {
+        /// <summary>
+        /// Свойство предоставляет доступ к таблице PhotoLenta
+        /// </summary>
         public DbSet<PhotoLenta> PhotoLentas { get; set; }
-
+        
+        /// <summary>
+        /// Метод защищает имена таблиц от плюрализации
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

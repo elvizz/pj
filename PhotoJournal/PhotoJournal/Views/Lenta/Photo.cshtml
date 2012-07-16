@@ -5,12 +5,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Photo</h2>
+<h2>@Html.DisplayFor(m=>m.Title)</h2>
+<h4>@Html.DisplayFor(m=>m.DateTime)</h4>
 <div id="pageContent">
-
 <div class="content">
     <div class="postThumb">
         <img src="@Url.Content(string.Format("~/Images/photoLenta/{0}", @Html.DisplayFor(modelitem => modelitem.Name)))" alt=""/>
     </div>
+    <span>@Html.DisplayFor(m=>m.Description)</span>
 </div>
 </div>

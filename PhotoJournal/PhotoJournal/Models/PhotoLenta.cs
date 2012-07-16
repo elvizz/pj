@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 namespace PhotoJournal.Models
 {
     /// <summary>
-    /// Класс определяет сущности для таблицы PhotoLenta
+    /// Класс определяет сущность для таблицы PhotoLenta
     /// </summary>
     public class PhotoLenta
     {
