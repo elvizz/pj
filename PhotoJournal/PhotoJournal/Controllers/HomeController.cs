@@ -16,10 +16,5 @@ namespace PhotoJournal.Controllers
             ViewBag.Message = "Фото месяца";
             return View();
         }
-
-        public ActionResult Archive()
-        {
-            return View();
-        }
     }
 }

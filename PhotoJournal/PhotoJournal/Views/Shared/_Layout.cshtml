@@ -7,6 +7,7 @@
     <link href="@Url.Content("~/Content/css/blue.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/css/fotorama.css")" rel="stylesheet" type="text/css"/>
     <link href="@Url.Content("~/Content/css/prettyPhoto.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/css/Site.css")" rel="stylesheet" type="text/css"/>
     <!-- jQuery Library-->
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/fotorama.js")" type="text/javascript"></script>
@@ -21,23 +22,12 @@
 			</div>
 			<div id="menuContainer">
 				<ul id="navMenu">
-                    <li class="parent">
+                    <li class="">
                         <a href="@Url.Action("Index","Home")">Главная</a>
-                        <ul>
-                            <li>
-                                <a href="@Url.Action("Archive","Home")">Архив</a>
-                            </li>
-                        </ul>
                     </li>
-                    <li class=""><a href="@Url.Action("Index","Lenta")">Лента</a></li>
-					<li class="parent">
-						<a href="#">Путешествия</a>
-						<ul>
-							<li>
-								<a href="#">Блоги</a>
-							</li>
-						</ul>
-					</li>
+                    <li class=""><a href="@Url.Action("Index","Lenta")">Фотолента</a></li>
+					<li class=""><a href="@Url.Action("Index","Travel")">Путешествия</a></li>
+					<li class=""><a href="#">Блоги</a></li>
 					<li class=""><a href="#">О проекте</a></li>
 				</ul>
 			</div><!-- menuContainer close -->

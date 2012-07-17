@@ -6,27 +6,41 @@
 }
 
 <h2>Фотолента</h2>
-<div id="pagination">
-@for (int i = 1; i <= ViewBag.PagesCount;i++ )
-{
-   <a href="@Url.Action("Index","Lenta")?page=@i">@i</a>
-}
-</div>
 <div id="pageContent">
     <div class="content">
             @foreach (var item in Model)
             {
-              <div class="postThumb">
-                  <a href="@Url.Action("Photo","Lenta")@string.Format("/{0}",item.Id)" title="@Html.DisplayFor(modelitem => item.Description)">
-                      <img style="max-width: 700px; max-height: 500px;" src="@Url.Content("~/Images/photoLenta/" + @Html.DisplayFor(modelitem => item.Name))" alt="@Html.DisplayFor(modelitem => item.Title)"/>
-                  </a>
-              </div>
+                <div class="portfolioItem oneColumn preLoad">	
+                    <div class="twoThird">
+                        <div class="portfolioThumb">
+                            <div class="frame">
+                                <a href="@Url.Action("Photo","Lenta")@string.Format("/{0}",item.Id)" title="@Html.DisplayFor(modelitem => item.Description)">
+                                    <div class="thumbHolder">
+                                        <img src="@Url.Content("~/Images/photoLenta/" + @Html.DisplayFor(modelitem => item.Name))" 
+                                        alt="@Html.DisplayFor(modelitem => item.Title)" class="thumb imgLenta">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>	
+                    <div class="oneThird last txtLenta">
+                        <div class="portfolioDetails cf">
+                            <span class="date">@item.DateTime</span>
+                            <h2><a href="@Url.Action("Photo","Lenta")@string.Format("/{0}",item.Id)">@item.Title</a></h2>
+                            <p>@item.Description</p>
+                            <a href="@Url.Action("Photo","Lenta")@string.Format("/{0}",item.Id)" class="button small">Перейти</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- portfolioItem close -->
+                <hr />
             }
     </div>
 </div>
 <div id="pagination">
-@for (int i = 1; i <= ViewBag.PagesCount;i++ )
+@for (int i = 1; i <= ViewBag.PagesCount; i++)
 {
-   <a href="@Url.Action("Index","Lenta")?page=@i">@i</a>
+   <a href="@Url.Action("Index", "Lenta")?page=@i">@i</a>
 }
 </div>

@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LentaController.cs" />
+    <Compile Include="Controllers\TravelController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -79,6 +80,7 @@
     <Content Include="Content\css\blue.css" />
     <Content Include="Content\css\fotorama.css" />
     <Content Include="Content\css\prettyPhoto.css" />
+    <Content Include="Content\css\Site.css" />
     <Content Include="Content\css\TemplateStyle.css" />
     <Content Include="Content\img\back-to-top.png" />
     <Content Include="Content\img\blue\button-accordion.png" />
@@ -165,14 +167,12 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Archive.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Lenta\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\img\blue\.DS_Store" />
     <Content Include="Views\Lenta\Photo.cshtml" />
+    <Content Include="Views\Travel\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

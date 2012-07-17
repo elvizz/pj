@@ -1,0 +1,12 @@
+﻿/*------------LentaController css------------------*/
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. Index view
+/* - - - - - - - - - - - - - - - - - - - - */
+.imgLenta{
+    max-width: 600px;
+    max-height: 500px;
+}
+.txtLenta {
+    float: right;
+}

@@ -929,7 +929,7 @@ ul#footerNavigation li a:hover{
 
 .main .oneThird{ width: 220px; }
 
-.twoThird{ width: 620px; }
+.twoThird{ width: auto; }
 
 .main .twoThird{ width: 460px; }
 
