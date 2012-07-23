@@ -18,6 +18,9 @@ namespace PhotoJournal.Models
         /// Свойство предоставляет доступ к таблице PhotoLenta
         /// </summary>
         public DbSet<PhotoLenta> PhotoLentas { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Article> Articles { get; set; }
+        public DbSet<User> Users { get; set; }
         
         /// <summary>
         /// Метод защищает имена таблиц от плюрализации

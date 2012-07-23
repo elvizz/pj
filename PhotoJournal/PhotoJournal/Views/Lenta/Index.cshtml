@@ -25,7 +25,7 @@
                     </div>	
                     <div class="oneThird last txtLenta">
                         <div class="portfolioDetails cf">
-                            <span class="date">@item.DateTime</span>
+                            <span class="date">@item.DateTime.ToShortDateString()</span>
                             <h2><a href="@Url.Action("Photo","Lenta")@string.Format("/{0}",item.Id)">@item.Title</a></h2>
                             <p>@item.Description</p>
                             <a href="@Url.Action("Photo","Lenta")@string.Format("/{0}",item.Id)" class="button small">Перейти</a>

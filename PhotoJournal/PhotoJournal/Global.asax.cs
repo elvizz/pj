@@ -26,7 +26,7 @@ namespace PhotoJournal
             routes.MapRoute(
                 "Default", // Имя маршрута
                 "{controller}/{action}/{id}", // URL-адрес с параметрами
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Параметры по умолчанию
+                new { controller = "Lenta", action = "Index", id = UrlParameter.Optional } // Параметры по умолчанию
             );
 
         }

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using PhotoJournal.Models;
 
 namespace PhotoJournal.Controllers
 {
@@ -11,9 +14,16 @@ namespace PhotoJournal.Controllers
         //
         // GET: /Travel/
 
+        private DataManger _dataManager;
+        public TravelController()
+        {
+            _dataManager = new DataManger();
+        }
+
         public ActionResult Index()
         {
-            return View();
+            var art = _dataManager.Article.GetAll();
+            return View(art.ToList());
         }
 
     }

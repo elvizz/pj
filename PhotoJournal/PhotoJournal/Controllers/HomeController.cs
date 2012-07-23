@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PhotoJournal.Models;
 
 namespace PhotoJournal.Controllers
 {
@@ -11,10 +12,19 @@ namespace PhotoJournal.Controllers
         //
         // GET: /Home/
 
+        private DataManger _dataManger;
+
+        public HomeController()
+        {
+            _dataManger = new DataManger();
+        }
+
+        [NonAction]
         public ActionResult Index()
         {
             ViewBag.Message = "Фото месяца";
-            return View();
+            var phLenta = _dataManger.Lenta.GetAll().Take(4);
+            return View(phLenta.ToList());
         }
     }
 }

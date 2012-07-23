@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<PhotoJournal.Models.PhotoLenta>
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "PhotoJournal";
 }
@@ -19,3 +21,28 @@
     <a href="@Url.Content("~/Images/2.jpg")"><img src="@Url.Content("~/Images/2Preview.jpg")" alt="what drink is here?"></a>
     <a href="@Url.Content("~/Images/3.png")"><img src="@Url.Content("~/Images/3Preview.png")" alt="homemediaserver"></a>
 </div>
+    <div id="pageContent" class="noSidebar">
+        <div class="fullwidth content">
+            @foreach (var item in Model)
+            {
+                <div class="oneFourth">
+                    <div class="portfolioItem innerDesc preLoad">
+                        <div class="portfolioThumb">
+                            <div class="frame">
+                                <a href="#" class="viewDetail">
+                                    <div class="thumbHolder">
+                                        <img src="@Url.Content(string.Format("~/Images/photoLenta/{0}",item.Name))" alt="portfolio thumb" class="thumb" style="opacity: 1; width: 200px; height: 160px">									
+                                        <div class="description">
+                                            <h2>@item.Title</h2>
+                                            <span class="date">@item.DateTime</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- portfolioItem close -->
+                </div>
+            }
+        </div><!-- fullwidth close -->
+        <div class="clear"></div>
+    </div>

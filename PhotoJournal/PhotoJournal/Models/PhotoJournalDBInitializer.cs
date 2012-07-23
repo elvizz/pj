@@ -36,7 +36,15 @@ namespace PhotoJournal.Models
                             };
             lenta.ForEach(l=>context.PhotoLentas.Add(l));
             context.SaveChanges();
-            
+
+            var user = new List<User> {new User {Name = "Администратор"}};
+            user.ForEach(l=>context.Users.Add(l));
+            context.SaveChanges();
+
+            var category = new List<Category> {new Category {Name = "Путешествия"}, new Category {Name = "Котэ"}};
+            category.ForEach(l=>context.Categories.Add(l));
+            context.SaveChanges();
+
             base.Seed(context);
         }
     }

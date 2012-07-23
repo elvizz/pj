@@ -69,11 +69,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\ArticleRepository.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\DataManger.cs" />
+    <Compile Include="Models\PhotoArticle.cs" />
     <Compile Include="Models\PhotoJournalDBInitializer.cs" />
     <Compile Include="Models\PJContext.cs" />
     <Compile Include="Models\PhotoLenta.cs" />
     <Compile Include="Models\LentaRepository.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

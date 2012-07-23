@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<PhotoJournal.Models.Article>
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -18,7 +19,7 @@
 					<div class="portfolioItem innerDesc preLoad">
 						<div class="portfolioThumb">
 							<div class="frame">
-								<a href="portfolio_single.html" class="viewDetail">
+								<a href="#" class="viewDetail">
 									<div class="thumbHolder">
 										<img src="@Url.Content("~/Content/img/portfolio-thumb-small.jpg")" alt="portfolio thumb" class="thumb" style="opacity: 1" />
 										<div class="description">

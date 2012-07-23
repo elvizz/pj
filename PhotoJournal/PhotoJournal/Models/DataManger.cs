@@ -34,5 +34,18 @@ namespace PhotoJournal.Models
                 return _lentaRepository;
             }
         }
+
+        private ArticleRepository _articleRepository;
+        public ArticleRepository Article
+        {
+            get
+            {
+                if (_articleRepository==null)
+                {
+                    _articleRepository = new ArticleRepository(_pjContext);
+                }
+                return _articleRepository;
+            }
+        }
     }
 }

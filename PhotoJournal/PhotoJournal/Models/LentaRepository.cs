@@ -23,7 +23,7 @@ namespace PhotoJournal.Models
         /// <summary>
         /// Достает из базы данных поле по Id
         /// </summary>
-        /// <param name="id">Id поля, которое нужно достать</param>
+        /// <param name="id">Id поля</param>
         /// <returns></returns>
         public PhotoLenta GetItem(Guid id)
         {
