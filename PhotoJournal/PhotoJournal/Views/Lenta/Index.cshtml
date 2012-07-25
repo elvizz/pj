@@ -38,9 +38,20 @@
             }
     </div>
 </div>
-<div id="pagination">
-@for (int i = 1; i <= ViewBag.PagesCount; i++)
-{
-   <a href="@Url.Action("Index", "Lenta")?page=@i">@i</a>
-}
+<div class="pagination cf">
+    <span class="pages">Страница @ViewBag.Page из @ViewBag.PagesCount</span>
+    <ul class="pageList">
+        <li class="prevPage"><a href="@Url.Action("Index", "Lenta")?page=@ViewBag.Prev"></a></li>
+        @for (int i = 1; i <= ViewBag.PagesCount; i++)
+        {
+            if (i==ViewBag.Page)
+            {
+                <li><span class="current">@i</span></li>
+            }else
+            {
+                <li><a href="@Url.Action("Index", "Lenta")?page=@i">@i</a></li>
+            }
+        }
+        <li class="nextPage"><a href="@Url.Action("Index", "Lenta")?page=@ViewBag.Next"></a></li>	
+    </ul>			
 </div>

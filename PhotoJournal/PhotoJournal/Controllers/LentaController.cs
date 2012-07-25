@@ -24,8 +24,17 @@ namespace PhotoJournal.Controllers
         public ActionResult Index(int page=1)
         {
             var phLenta = _dataManger.Lenta.GetAll().Skip((page - 1)*ItemsOnPage).Take(ItemsOnPage);
+            int PagesCount = (int)Math.Ceiling((decimal)_dataManger.Lenta.GetAll().Count() / ItemsOnPage);
             ViewBag.Page = page;
-            ViewBag.PagesCount = (int)Math.Ceiling((decimal)_dataManger.Lenta.GetAll().Count() / ItemsOnPage);
+            if (page>1)
+                ViewBag.Prev = page-1;
+            else
+                ViewBag.Prev = page;
+            if (page < PagesCount)
+                ViewBag.Next = page + 1;
+            else
+                ViewBag.Next = page;
+            ViewBag.PagesCount = PagesCount;
             return View(phLenta.ToList());
         }
 

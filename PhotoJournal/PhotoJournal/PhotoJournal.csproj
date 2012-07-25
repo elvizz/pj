@@ -87,6 +87,8 @@
     <Content Include="Content\css\prettyPhoto.css" />
     <Content Include="Content\css\Site.css" />
     <Content Include="Content\css\TemplateStyle.css" />
+    <Content Include="Content\img\arrow-next-page.png" />
+    <Content Include="Content\img\arrow-prev-page.png" />
     <Content Include="Content\img\back-to-top.png" />
     <Content Include="Content\img\blue\button-accordion.png" />
     <Content Include="Content\img\blue\button-toggle.png" />
@@ -115,6 +117,7 @@
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\menu-arrow.png" />
     <Content Include="Content\img\pageBg.jpg" />
+    <Content Include="Content\img\pagination-main.png" />
     <Content Include="Content\img\portfolio-thumb-small.jpg" />
     <Content Include="Content\img\social\facebook-rounded.png" />
     <Content Include="Content\img\social\twitter-rounded.png" />
