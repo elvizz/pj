@@ -8,6 +8,8 @@ namespace PhotoJournal.Models
 {
     public class PhotoArticle
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid Id { get; set; }
         public Guid ArticleId { get; set; }
         public int Number { get; set; }
         public string Name { get; set; }
